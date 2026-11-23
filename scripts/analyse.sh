@@ -71,6 +71,11 @@ temps_moyen() {
     awk '$9==200 {s+=$11; n++} END {if (n>0) printf "%.1f ms\n", s/n; else print "n/a"}' "$FICHIER"
 }
 
+requetes_par_heure() {
+    echo "--- Requêtes par heure (UTC) ---"
+    awk '{split($4,a,":"); print a[2]}' "$FICHIER" | sort | uniq -c | awk '{print $2 "h : " $1}'
+}
+
 generer_rapport() {
     entete
     echo
@@ -81,6 +86,8 @@ generer_rapport() {
     ip_suspecte
     echo
     temps_moyen
+    echo
+    requetes_par_heure
 }
 
 main() {
