@@ -1,0 +1,25 @@
+=== Rapport d'analyse ===
+Date        : 2026-11-23 05:27:12
+Utilisateur : ada@ada-virtual-machine
+Matricule   : adama-faye-isep-7
+Fichier     : logs/access.log
+sha256      : 1acf12da9fe05de8a508f8f7826405f609f8f51f5833b51fa326460fa32d38dc
+
+--- Requêtes par famille ---
+2xx : 1731
+3xx : 0
+4xx : 235
+5xx : 34
+
+--- Top 5 des endpoints ---
+    394 /api/auth/login
+    283 /api/etudiants
+    280 /api/notes
+    258 /api/paiements
+    256 /api/health
+
+--- IP suspecte (échecs 401 sur /api/auth/login) ---
+    111 197.149.198.46
+
+--- Temps de réponse moyen des 200 ---
+156.4 ms

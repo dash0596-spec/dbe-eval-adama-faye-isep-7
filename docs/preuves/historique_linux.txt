@@ -1,0 +1,318 @@
+    1  2026-11-23 05:10:40 history -w
+    2  2026-11-23 05:10:40 history -w
+    3  2026-11-23 05:10:40 git add .
+    4  2026-11-23 05:10:40 git commit -m "Message"
+    5  2026-11-23 05:10:40 git push
+    6  2026-11-23 05:10:40 git --version
+    7  2026-11-23 05:10:40 javac -version
+    8  2026-11-23 05:10:40 mkdir reponses.MD
+    9  2026-11-23 05:10:40 cd reponses.MD
+   10  2026-11-23 05:10:40 [200~Q1. Fichier de --global et différence avec .git/config
+   11  2026-11-23 05:10:40 git config --global enregistre la configuration dans le fichier ~/.gitconfig (sous Windows : C:\Users\TonNom\.gitconfig). Elle s’applique à tous les dépôts de ton compte utilisateur.
+   12  2026-11-23 05:10:40 Sans --global, la configuration est enregistrée dans .git/config du dépôt courant. Elle s’applique uniquement à ce dépôt.
+   13  2026-11-23 05:10:40 En cas de conflit, la config locale (.git/config) est prioritaire sur la globale.~
+   14  2026-11-23 05:10:40 pwd
+   15  2026-11-23 05:10:40 cd
+   16  2026-11-23 05:10:40 sudo apt update && sudo apt install git default-jdk
+   17  2026-11-23 05:10:40 git config --global user.name "Adama Faye"
+   18  2026-11-23 05:10:40 git config --global user.email "dash0596@icloud.com"
+   19  2026-11-23 05:10:40 git config --global init.defaultBranch main
+   20  2026-11-23 05:10:40 git config --global core.editor nano 
+   21  2026-11-23 05:10:40 git config --global --list
+   22  2026-11-23 05:10:40 cat ~/.gitconfig
+   23  2026-11-23 05:10:40 cd ~
+   24  2026-11-23 05:10:40 cat > reponses.md << 'EOF'
+   25  2026-11-23 05:10:40 # TP Git & GitHub - Réponses
+   26  2026-11-23 05:10:40 **Nom :** Adama Faye
+   27  2026-11-23 05:10:40 ## Q1. Fichier de --global et différence avec .git/config
+   28  2026-11-23 05:10:40 L'option --global enregistre la configuration dans le fichier ~/.gitconfig. Elle s'applique à tous les dépôts de l'utilisateur.
+   29  2026-11-23 05:10:40 Sans --global, la configuration est enregistrée dans .git/config du dépôt courant. Elle s'applique uniquement à ce dépôt, et elle est prioritaire sur la configuration globale.
+   30  2026-11-23 05:10:40 ## Q2. Pourquoi l'email doit correspondre à celui du compte GitHub
+   31  2026-11-23 05:10:40 Chaque commit enregistre l'email de son auteur. GitHub s'en sert pour associer le commit à un compte. Si l'email ne correspond pas, les commits ne sont pas liés au profil et ne comptent pas dans le graphique de contributions. L'email ne sert pas à l'authentification, mais à l'attribution des commits.
+   32  2026-11-23 05:10:40 EOF
+   33  2026-11-23 05:10:40 cat reponses.md
+   34  2026-11-23 05:10:40 git clone https://github.com/dash0596-spec/tp-git--Adama-Faye-.git
+   35  2026-11-23 05:10:40 cp reponses.md tp-git--Adama-Faye-/
+   36  2026-11-23 05:10:40 cd tp-git--Adama-Faye-
+   37  2026-11-23 05:10:40 git add reponses.md
+   38  2026-11-23 05:10:40 git commit -m "ajout des reponses du TP"
+   39  2026-11-23 05:10:40 git push
+   40  2026-11-23 05:10:40 cd ~
+   41  2026-11-23 05:10:40 mkdir ~/tp-git && cd ~/tp-git
+   42  2026-11-23 05:10:40 git init
+   43  2026-11-23 05:10:40 ls -a
+   44  2026-11-23 05:10:40 git status
+   45  2026-11-23 05:10:40 cat > Main.java << 'EOF'
+   46  2026-11-23 05:10:40 public class Main {
+   47  2026-11-23 05:10:40     static int addition(int a, int b) {
+   48  2026-11-23 05:10:40         return a + b;
+   49  2026-11-23 05:10:40     }
+   50  2026-11-23 05:10:40     public static void main(String[] args) {
+   51  2026-11-23 05:10:40         System.out.println("2 + 3 = " + addition(2, 3));
+   52  2026-11-23 05:10:40     }
+   53  2026-11-23 05:10:40 }
+   54  2026-11-23 05:10:40 EOF
+   55  2026-11-23 05:10:40 javac Main.java
+   56  2026-11-23 05:10:40 java Main
+   57  2026-11-23 05:10:40 echo "# Calculatrice" > README.md
+   58  2026-11-23 05:10:40 git status
+   59  2026-11-23 05:10:40 cd ~/tp-git
+   60  2026-11-23 05:10:40 git add Main.java README.md
+   61  2026-11-23 05:10:40 git status
+   62  2026-11-23 05:10:40 git commit -m "Ajoute la méthode addition et le README"
+   63  2026-11-23 05:10:40 git log
+   64  2026-11-23 05:10:40 git log --oneline
+   65  2026-11-23 05:10:40 cat > Main.java << 'EOF'
+   66  2026-11-23 05:10:40 public class Main {
+   67  2026-11-23 05:10:40     static int addition(int a, int b) {
+   68  2026-11-23 05:10:40         return a + b;
+   69  2026-11-23 05:10:40     }
+   70  2026-11-23 05:10:40     static int soustraction(int a, int b) {
+   71  2026-11-23 05:10:40         return a - b;
+   72  2026-11-23 05:10:40     }
+   73  2026-11-23 05:10:40     public static void main(String[] args) {
+   74  2026-11-23 05:10:40         System.out.println("2 + 3 = " + addition(2, 3));
+   75  2026-11-23 05:10:40         System.out.println("5 - 2 = " + soustraction(5, 2));
+   76  2026-11-23 05:10:40     }
+   77  2026-11-23 05:10:40 }
+   78  2026-11-23 05:10:40 EOF
+   79  2026-11-23 05:10:40 javac Main.java && java Main
+   80  2026-11-23 05:10:40 git diff
+   81  2026-11-23 05:10:40 git add Main.java
+   82  2026-11-23 05:10:40 git diff
+   83  2026-11-23 05:10:40 git diff --staged
+   84  2026-11-23 05:10:40 git commit -m "Ajoute la méthode soustraction"
+   85  2026-11-23 05:10:40 cd ~/tp-git
+   86  2026-11-23 05:10:40 cat > REPONSES.md << 'EOF'
+   87  2026-11-23 05:10:40 # TP Git & GitHub - Réponses
+   88  2026-11-23 05:10:40 **Nom :** Adama Faye
+   89  2026-11-23 05:10:40 ## Q1. Fichier de --global et différence avec .git/config
+   90  2026-11-23 05:10:40 L'option --global enregistre la configuration dans ~/.gitconfig. Elle s'applique à tous les dépôts de l'utilisateur. Sans --global, la configuration est enregistrée dans .git/config du dépôt courant : elle s'applique uniquement à ce dépôt et est prioritaire sur la configuration globale.
+   91  2026-11-23 05:10:40 ## Q2. Pourquoi l'email doit correspondre à celui du compte GitHub
+   92  2026-11-23 05:10:40 Chaque commit enregistre l'email de son auteur. GitHub s'en sert pour associer le commit à un compte. Si l'email ne correspond pas, les commits ne sont pas liés au profil et ne comptent pas dans le graphique de contributions.
+   93  2026-11-23 05:10:40 ## Q3. Que contient le dossier .git ? Que perd-on en le supprimant ?
+   94  2026-11-23 05:10:40 Le dossier .git contient tout l'historique du dépôt : les commits et les versions des fichiers (objets), les branches et les tags (refs), la position courante (HEAD), l'index (zone de staging) et la configuration locale. En le supprimant, on perd tout l'historique : le dossier redevient un dossier ordinaire, les fichiers restent mais ne sont plus suivis par Git.
+   95  2026-11-23 05:10:40 ## Q4. Différence entre git diff et git diff --staged
+   96  2026-11-23 05:10:40 git diff montre les modifications du répertoire de travail qui ne sont pas encore indexées (différence entre les fichiers et l'index). git diff --staged montre les modifications indexées, c'est-à-dire ce qui sera inclus dans le prochain commit (différence entre l'index et le dernier commit).
+   97  2026-11-23 05:10:40 ## Q5. Suite de caractères au début de chaque ligne de git log --oneline
+   98  2026-11-23 05:10:40 C'est l'identifiant (hash SHA-1) du commit, ici abrégé à ses premiers caractères. Il identifie de façon unique chaque commit.
+   99  2026-11-23 05:10:40 EOF
+  100  2026-11-23 05:10:40 git add REPONSES.md
+  101  2026-11-23 05:10:40 git commit -m "Ajoute les réponses du TP"
+  102  2026-11-23 05:10:40 echo "Petite calculatrice en Java (addition et soustraction)." >> README.md
+  103  2026-11-23 05:10:40 git add README.md
+  104  2026-11-23 05:10:40 git commit -m "Ajoute une description au README"
+  105  2026-11-23 05:10:40 git log --oneline --graph
+  106  2026-11-23 05:10:40 git show <identifiant>
+  107  2026-11-23 05:13:22 cat > src/GenerateurLogs.java << 'EOF'
+import java.util.Random;
+
+/**
+ * Génère un journal d'accès d'API back-end, propre à chaque étudiant.
+ * Usage : java -cp out GenerateurLogs <matricule> <nombreDeLignes>
+ */
+public class GenerateurLogs {
+    static final String[] ENDPOINTS = {
+        "/api/etudiants", "/api/etudiants/", "/api/notes", "/api/cours",
+        "/api/auth/login", "/api/paiements", "/api/health"
+    };
+
+    public static void main(String[] args) {
+        if (args.length != 2) {
+            System.err.println("Usage : java -cp out GenerateurLogs <matricule> <nombreDeLignes>");
+            System.exit(1);
+        }
+        int n;
+        try {
+            n = Integer.parseInt(args[1]);
+        } catch (NumberFormatException e) {
+            System.err.println("Erreur : le nombre de lignes doit être un entier");
+            System.exit(2);
+            return;
+        }
+        Random r = new Random(args[0].hashCode());
+        String suspecte = "197.149." + r.nextInt(256) + "." + (1 + r.nextInt(254));
+        int seconde = 8 * 3600;
+        for (int i = 0; i < n; i++) {
+            seconde += 1 + r.nextInt(12);
+            boolean attaque = r.nextInt(100) < 6;
+            String ip = attaque ? suspecte : "10.0." + r.nextInt(4) + "." + (10 + r.nextInt(15));
+            String chemin = attaque ? "/api/auth/login" : ENDPOINTS[r.nextInt(ENDPOINTS.length)];
+            String methode = "GET";
+            int statut = 200;
+            int duree = 5 + r.nextInt(300);
+            switch (chemin) {
+                case "/api/etudiants/":
+                    chemin += (1 + r.nextInt(120));
+                    statut = r.nextInt(100) < 15 ? 404 : 200;
+                    break;
+                case "/api/notes":
+                    chemin += "?page=" + (1 + r.nextInt(5));
+                    statut = r.nextInt(100) < 8 ? 400 : 200;
+                    break;
+                case "/api/auth/login":
+                    methode = "POST";
+                    statut = attaque ? 401 : (r.nextInt(100) < 20 ? 401 : 200);
+                    break;
+                case "/api/paiements":
+                    methode = r.nextBoolean() ? "POST" : "GET";
+                    int t = r.nextInt(100);
+                    statut = t < 6 ? 500 : (t < 10 ? 503 : (methode.equals("POST") ? 201 : 200));
+                    if (r.nextInt(100) < 5) {
+                        duree = 1500 + r.nextInt(1500);
+                    }
+                    break;
+                default:
+                    break;
+            }
+            int octets = statut >= 400 ? 60 + r.nextInt(100) : 200 + r.nextInt(4000);
+            System.out.printf("%s - - [23/Nov/2026:%02d:%02d:%02d +0000] \"%s %s HTTP/1.1\" %d %d %dms%n",
+                    ip, seconde / 3600, (seconde / 60) % 60, seconde % 60, methode, chemin,
+                    statut, octets, duree);
+        }
+    }
+}
+EOF
+
+  108  2026-11-23 05:13:39 ls -l src/ && head -5 src/GenerateurLogs.java
+  109  2026-11-23 05:14:26 mkdir -p out && javac -d out src/GenerateurLogs.java && ls out
+  110  2026-11-23 05:15:17 java -cp out GenerateurLogs 2> logs/gen.err; echo "Code de retour : $?"
+  111  2026-11-23 05:15:36 cat logs/gen.err
+  112  2026-11-23 05:15:58 java -cp out GenerateurLogs $MATRICULE 2000 > logs/access.log
+  113  2026-11-23 05:15:59 wc -l logs/access.log
+  114  2026-11-23 05:15:59 head -1 logs/access.log
+  115  2026-11-23 05:19:13 awk '{print $9}' logs/access.log | sort | uniq -c | sort -rn
+  116  2026-11-23 05:19:30 awk '{print $7}' logs/access.log | sed 's/?page=.*//' | sort | uniq -c | sort -rn | head -3
+  117  2026-11-23 05:19:50 awk '{print $1}' logs/access.log | sort -u | wc -l
+  118  2026-11-23 05:20:08 awk '$7=="/api/auth/login" && $9==401 {print $1}' logs/access.log | sort | uniq -c | sort -rn | head -1
+  119  2026-11-23 05:20:35 awk '$9==200 {s+=$11; n++} END {printf "%.1f\n", s/n}' logs/access.log
+  120  2026-11-23 05:21:23 awk '{d=$11+0; if (d>max) {max=d; l=$0}} END {print l}' logs/access.log
+  121  2026-11-23 05:21:37 awk '{split($4,a,":"); print a[2]}' logs/access.log | sort | uniq -c
+  122  2026-11-23 05:21:51 grep -E '" 5[0-9]{2} ' logs/access.log | tee logs/erreurs_5xx.log | wc -l
+  123  2026-11-23 05:22:13 sed -E 's/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+/x.x.x.x/' logs/access.log > logs/access_anonyme.log
+  124  2026-11-23 05:22:36 find . -name '*.log' -mmin -60 -size +1k -exec wc -l {} +
+  125  2026-11-23 05:24:47 head -3 logs/access_anonyme.log
+  126  2026-11-23 05:25:04 cat > scripts/analyse.sh << 'EOF'
+#!/bin/bash
+set -euo pipefail
+
+FICHIER=""
+TOP=3
+
+usage() {
+    echo "Usage : bash scripts/analyse.sh <fichier.log> [--top N]" >&2
+}
+
+parse_args() {
+    if [ $# -ne 1 ] && [ $# -ne 3 ]; then
+        usage
+        exit 1
+    fi
+    FICHIER="$1"
+    if [ $# -eq 3 ]; then
+        if [ "$2" != "--top" ] || ! [[ "$3" =~ ^[1-9][0-9]*$ ]]; then
+            usage
+            exit 1
+        fi
+        TOP="$3"
+    fi
+}
+
+verifier_environnement() {
+    if [ -z "${MATRICULE:-}" ]; then
+        echo "Erreur : la variable MATRICULE n'est pas définie" >&2
+        exit 1
+    fi
+    if [ ! -f "$FICHIER" ]; then
+        echo "Erreur : le fichier $FICHIER n'existe pas" >&2
+        exit 2
+    fi
+    if [ ! -s "$FICHIER" ]; then
+        echo "Erreur : le fichier $FICHIER est vide" >&2
+        exit 3
+    fi
+}
+
+entete() {
+    echo "=== Rapport d'analyse ==="
+    echo "Date        : $(date '+%F %T')"
+    echo "Utilisateur : $(whoami)@$(hostname)"
+    echo "Matricule   : $MATRICULE"
+    echo "Fichier     : $FICHIER"
+    echo "sha256      : $(sha256sum "$FICHIER" | awk '{print $1}')"
+}
+
+compter_familles() {
+    echo "--- Requêtes par famille ---"
+    local fam n
+    for fam in 2 3 4 5; do
+        n=$(awk -v c="$fam" 'substr($9,1,1)==c {n++} END {print n+0}' "$FICHIER")
+        echo "${fam}xx : $n"
+    done
+}
+
+top_endpoints() {
+    echo "--- Top $TOP des endpoints ---"
+    awk '{print $7}' "$FICHIER" | sed 's/?page=.*//' | sort | uniq -c | sort -rn | awk -v n="$TOP" 'NR<=n'
+}
+
+ip_suspecte() {
+    echo "--- IP suspecte (échecs 401 sur /api/auth/login) ---"
+    awk '$7=="/api/auth/login" && $9==401 {print $1}' "$FICHIER" | sort | uniq -c | sort -rn | awk 'NR==1'
+}
+
+temps_moyen() {
+    echo "--- Temps de réponse moyen des 200 ---"
+    awk '$9==200 {s+=$11; n++} END {if (n>0) printf "%.1f ms\n", s/n; else print "n/a"}' "$FICHIER"
+}
+
+generer_rapport() {
+    entete
+    echo
+    compter_familles
+    echo
+    top_endpoints
+    echo
+    ip_suspecte
+    echo
+    temps_moyen
+}
+
+main() {
+    parse_args "$@"
+    verifier_environnement
+    mkdir -p rapports
+    local rapport="rapports/rapport_${MATRICULE}_$(date +%Y%m%d_%H%M).txt"
+    generer_rapport > "$rapport"
+    cat "$rapport"
+    echo "Rapport écrit dans : $rapport"
+}
+
+main "$@"
+EOF
+
+  127  2026-11-23 05:25:33 bash scripts/analyse.sh logs/access.log; echo "Code : $?"     # (0)
+  128  2026-11-23 05:25:33 bash scripts/analyse.sh; echo "Code : $?"                     # (1)
+  129  2026-11-23 05:25:33 bash scripts/analyse.sh logs/absent.log; echo "Code : $?"     # (2)
+  130  2026-11-23 05:25:33 : > logs/vide.log; bash scripts/analyse.sh logs/vide.log; echo "Code : $?"   # (3)
+  131  2026-11-23 05:26:41 env -u MATRICULE bash scripts/analyse.sh logs/access.log; echo "Code : $?"
+  132  2026-11-23 05:27:12 bash scripts/analyse.sh logs/access.log --top 5
+  133  2026-11-23 05:33:25 cat > scripts/surveille.sh << 'EOF'
+#!/bin/bash
+LOG=logs/surveillance.log
+
+trap 'echo "$(date "+%F %T") arrêt propre" >> "$LOG"; exit 0' TERM
+
+while true; do
+    echo "$(date '+%F %T') $(wc -l < logs/access.log) lignes" >> "$LOG"
+    sleep 5 &
+    wait $!
+done
+EOF
+
+  134  2026-11-23 05:33:46 nohup bash scripts/surveille.sh > /dev/null 2>&1 &
+  135  2026-11-23 05:34:07 PID=$(pgrep -f scripts/surveille.sh); echo "PID = $PID"
+  136  2026-11-23 05:34:07 ps -o pid,ppid,stat,etime,cmd -p $PID
+  137  2026-11-23 05:36:30 kill -TERM $PID; sleep 1; tail -3 logs/surveillance.log
+  138  2026-11-23 05:36:46 pgrep -f scripts/surveille.sh || echo "processus arrêté"
+  139  2026-11-23 05:38:16 history > docs/preuves/historique_linux.txt

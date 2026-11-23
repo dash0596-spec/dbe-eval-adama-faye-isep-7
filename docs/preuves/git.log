@@ -1,0 +1,78 @@
+Script started on 2026-11-23 06:08:14-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="203" LINES="44"]
+[?2004h]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [7mgit config --global user.name "Adama Faye"[27m
+[7mgit config --global user.email "dash0596@icloud.com"[27m
+[7mgit config --global init.defaultBranch main[27m
+[7mgit config --global gpg.format ssh[27m
+[7mgit config --global user.signingkey ~/.ssh/id_ed25519.pub[27m
+[7mgit config --global commit.gpgsign true[27m
+[7mgit config --global tag.gpgSign true[27m[A[A[A[A[A[A]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ git config --global user.name "Adama Faye"
+git config --global user.email "dash0596@icloud.com"
+git config --global init.defaultBranch main
+git config --global gpg.format ssh
+git config --global user.signingkey ~/.ssh/id_ed25519.pub
+git config --global commit.gpgsign true
+git config --global tag.gpgSign true
+[?2004l[?2004h]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [7mls ~/.ssh/id_ed25519.pub && git config --global --list | grep -E 'user|gpg|init'[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls ~/.ssh/id_ed25519.pub && git config --global --list | grep -E 'user|gpg|init'
+[?2004lls: cannot access '/home/ada/.ssh/id_ed25519.pub': No such file or directory
+[?2004h]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [7mssh-keygen -t ed25519 -C "dash0596@icloud.com" -f ~/.ssh/id_ed25519[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cssh-keygen -t ed25519 -C "dash0596@icloud.com" -f ~/.ssh/id_ed25519
+[?2004lGenerating public/private ed25519 key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/ada/.ssh/id_ed25519
+Your public key has been saved in /home/ada/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:lvpogYQpHuJclwEodt4TAvbGzvy8QV+uyKkoM21Muco dash0596@icloud.com
+The key's randomart image is:
++--[ED25519 256]--+
+| oo..            |
+|oooo o           |
+|o o*o +          |
+|o.Bo.=   .       |
+|=.o*.o. S.       |
+| +o = ooo        |
+| + . +.o .       |
+|= * . *o.        |
+|oE ..*...        |
++----[SHA256]-----+
+[?2004h]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [7mls ~/.ssh/id_ed25519.pub && git config --global --list | grep -E 'user|gpg|init'[27m
+[7mcat ~/.ssh/id_ed25519.pub[27m[A]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ ls ~/.ssh/id_ed25519.pub && git config --global --list | grep -E 'user|gpg|init'
+cat ~/.ssh/id_ed25519.pub
+[?2004l/home/ada/.ssh/id_ed25519.pub
+[01;31m[Kuser[m[K.name=Adama Faye
+[01;31m[Kuser[m[K.email=dash0596@icloud.com
+[01;31m[Kuser[m[K.signingkey=/home/ada/.ssh/id_ed25519.pub
+[01;31m[Kinit[m[K.defaultbranch=main
+[01;31m[Kgpg[m[K.format=ssh
+commit.[01;31m[Kgpg[m[Ksign=true
+tag.[01;31m[Kgpg[m[Ksign=true
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILk53xCshCanIvFELz5ixAy77iRBWqABah+6oUQiMfK0 dash0596@icloud.com
+[?2004h]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [7mcat ~/.ssh/id_ed25519.pub[27mcat ~/.ssh/id_ed25519.pub
+[?2004lssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILk53xCshCanIvFELz5ixAy77iRBWqABah+6oUQiMfK0 dash0596@icloud.com
+[?2004h]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [K]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [7mssh -T git@github.com[27mssh -T git@github.com
+[?2004lThe authenticity of host 'github.com (140.82.121.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi dash0596-spec! You've successfully authenticated, but GitHub does not provide shell access.
+[?2004h]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [7mcd ~/dbe-eval-adama-faye-isep-7[27m
+[7mgit init && git branch --show-current[27m[A]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ cd ~/dbe-eval-adama-faye-isep-7
+git init && git branch --show-current
+[?2004lInitialized empty Git repository in /home/ada/dbe-eval-adama-faye-isep-7/.git/
+main
+[?2004h]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [7mprintf 'out/\n*.class\nlogs/*\n' > .gitignore[27m
+[7mcat .gitignore[27m[A]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ printf 'out/\n*.class\nlogs/*\n' > .gitignore
+cat .gitignore
+[?2004lout/
+*.class
+logs/*
+[?2004h]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [K]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [K]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [K]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [K]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [7mgit add .gitignore && git commit -m "Ajoute le .gitignore"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add .gitignore && git commit -m "Ajoute le .gitignore"
+[?2004l[main (root-commit) 835a039] Ajoute le .gitignore
+ 1 file changed, 3 insertions(+)
+ create mode 100644 .gitignore
+[?2004h]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [7mgit add src/GenerateurLogs.java && git commit -m "Ajoute le generateur de journaux Java"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add src/GenerateurLogs.java && git commit -m "Ajoute le generateur de journaux Java"
+[?2004l[main 7fde7e0] Ajoute le generateur de journaux Java
+ 1 file changed, 67 insertions(+)
+ create mode 100644 src/GenerateurLogs.java
+[?2004h]0;ada@ada-virtual-machine: ~/dbe-eval-adama-faye-isep-7[01;32mada@ada-virtual-machine[00m:[01;34m~/dbe-eval-adama-faye-isep-7[00m$ [7mgit add scripts/ && git commit -m "Ajoute les scripts d'analyse et de surveillance"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add scripts/ && git commit -m "Ajoute les scripts d'analyse et de surveillance"
+[?2004l[main 3f348ca] Ajout
